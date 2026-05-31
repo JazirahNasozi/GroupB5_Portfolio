@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 5 — SmartTech Portfolios | UICT</title>
+
+    <!-- EXTERNAL CSS: main shared stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS: landing-page-only overrides -->
+    <style>
+        body {
+            background-color: #03045e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     TOP NAV BAR  (inline CSS: quick logo color)
+     ══════════════════════════════════════ -->
+<div class="topbar-landing">
+    <span class="topbar-logo" style="color: #00b4d8; font-weight: 800; font-family: 'Syne', sans-serif; font-size: 18px;">SmartTech</span>
+    <nav class="topbar-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     HERO SECTION
+     ══════════════════════════════════════ -->
+<header class="landing-hero">
+    <p class="group-label">Group Five &mdash; UICT &mdash; IT for Business</p>
+    <h1>SmartTech <span>Portfolios</span></h1>
+    <div class="hero-underline"></div>
+    <p class="hero-sub">Five developers. One team. Real solutions for Uganda's digital future.</p>
+    <a href="#team" class="hero-cta">Meet the Team &darr;</a>
+
+    <!-- Decorative floating circles (CSS absolute positioning) -->
+    <div class="circle-deco circle-1"></div>
+    <div class="circle-deco circle-2"></div>
+    <div class="circle-deco circle-3"></div>
+</header>
+
+
+<!-- ══════════════════════════════════════
+     STATS BAR — uses CSS FLOAT layout
+     ══════════════════════════════════════ -->
+<section class="stats-bar">
+    <!-- clearfix applied on parent; each stat floats left -->
+    <div class="stats-inner clearfix">
+        <div class="stat-item float-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-item float-item">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Years Study</span>
+        </div>
+        <div class="stat-item float-item">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Group Project</span>
+        </div>
+        <div class="stat-item float-item">
+            <span class="stat-number">2026</span>
+            <span class="stat-label">Graduating</span>
+        </div>
+        <div class="stat-item float-item">
+            <span class="stat-number">UG</span>
+            <span class="stat-label">Based in Uganda</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     ABOUT SECTION — uses CSS FLOAT (2-column)
+     ══════════════════════════════════════ -->
+<section class="about-section" id="about">
+    <div class="about-inner clearfix">
+
+        <!-- LEFT column — float left -->
+        <div class="about-text float-left-col">
+            <p class="section-tag">Who We Are</p>
+            <h2>A UICT Team Building Real-World Tech</h2>
+            <p>
+                We are <strong>Group 5 — SmartTech</strong>, a team of five IT for Business
+                students at the Uganda Institute of Information and Communications Technology
+                (UICT), Kampala. Our coursework spans software development, web design,
+                database management, and AI — skills we brought together to build
+                <strong>DigiRise</strong>, our group final-year project.
+            </p>
+            <p style="margin-top: 14px;">
+                Our group final-year project, <strong>DigiRise</strong>, is a live AI-powered
+                platform that lets Ugandan small businesses build professional websites in minutes —
+                no technical skills needed. It's deployed and live at
+                <a href="https://digirise-final.vercel.app" target="_blank" style="color: #00b4d8; text-decoration: none;">digirise-final.vercel.app</a>.
+            </p>
+            <a href="https://digirise-final.vercel.app" target="_blank" class="about-link">Visit DigiRise &rarr;</a>
+        </div>
+
+        <!-- RIGHT column — float right -->
+        <div class="about-cards float-right-col">
+            <div class="about-card">
+                <span class="about-icon">&#129302;</span>
+                <h4>AI Website Generation</h4>
+                <p>Describe your business and Google Gemini AI instantly generates a complete, professional website.</p>
+            </div>
+            <div class="about-card">
+                <span class="about-icon">&#128736;</span>
+                <h4>Guided Setup Wizard</h4>
+                <p>A step-by-step wizard walks SME owners through branding, content, and layout — no coding required.</p>
+            </div>
+            <div class="about-card">
+                <span class="about-icon">&#9729;</span>
+                <h4>Full-Stack Platform</h4>
+                <p>Built with React, TypeScript, Supabase, and Vercel. Auth, storage, and edge functions all included.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ══════════════════════════════════════
+     TEAM SECTION (member cards)
+     ══════════════════════════════════════ -->
+<section class="team-section" id="team">
+    <div class="section-header">
+        <p class="section-tag">The People</p>
+        <h2>Meet Group 5</h2>
+        <p class="section-sub">Click on a member to explore their full portfolio and projects.</p>
+    </div>
+
+    <div class="members">
+
+        <a href="jazirah.html" class="member-card">
+            <div class="avatar-circle">
+                <img src="jazirah.jpg" alt="Nasozi Jazirah">
+            </div>
+            <h3>Nasozi Jazirah</h3>
+            <p class="role">AI Engineer</p>
+            <p class="member-bio">Builds AI and ML systems — crop detection, lip sync animation, and more.</p>
+            <span class="view-btn">View Portfolio</span>
+        </a>
+
+        <a href="nsubuga_about.html" class="member-card">
+            <div class="avatar-circle">
+                <img src="travor.jpg" alt="Travor">
+            </div>
+            <h3>Nsubuga Travor</h3>
+            <p class="role">Developer</p>
+            <p class="member-bio">Full-stack developer passionate about building scalable web applications.</p>
+            <span class="view-btn">View Portfolio</span>
+        </a>
+
+        <a href="sandrah.html" class="member-card">
+            <div class="avatar-circle">
+                <img src="sandrah.jpg" alt="Sandrah">
+            </div>
+            <h3>Tukundane Sandrah</h3>
+            <p class="role">Developer</p>
+            <p class="member-bio">UI-focused developer with a strong eye for clean, accessible design.</p>
+            <span class="view-btn">View Portfolio</span>
+        </a>
+
+        <a href="patience_about.html" class="member-card">
+            <div class="avatar-circle">
+                <img src="patience.jpg" alt="Patience">
+            </div>
+            <h3>Namaganda Patience</h3>
+            <p class="role">Developer</p>
+            <p class="member-bio">Backend-leaning developer with a focus on databases and system design.</p>
+            <span class="view-btn">View Portfolio</span>
+        </a>
+
+        <a href="praiz_about.html" class="member-card">
+            <div class="avatar-circle">
+                <img src="praiz.jpg" alt="Praiz">
+            </div>
+            <h3>Natinya Praiz</h3>
+            <p class="role">Developer</p>
+            <p class="member-bio">Creative technologist blending design thinking with practical code.</p>
+            <span class="view-btn">View Portfolio</span>
+        </a>
+
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     CONTACT / FOOTER STRIP
+     ══════════════════════════════════════ -->
+<section class="contact-strip" id="contact">
+    <div class="contact-inner clearfix">
+        <div class="contact-left float-item" style="float: left; width: 50%;">
+            <h3>Group 5 &mdash; SmartTech</h3>
+            <p>Uganda Institute of Information and Communications Technology (UICT)</p>
+            <p>IT for Business, Year II &mdash; 2024/2026</p>
+        </div>
+        <div class="contact-right float-item" style="float: right; width: 50%; text-align: right;">
+            <p>Kampala, Uganda</p>
+            <p>
+                <a href="mailto:group5@uict.ac.ug" style="color: #00b4d8; text-decoration: none;">group5@uict.ac.ug</a>
+            </p>
+            <p style="margin-top: 8px; font-size: 13px; color: #90c8d8;">
+                <a href="https://github.com" style="color: #90c8d8; margin-right: 16px;">GitHub</a>
+                <a href="https://linkedin.com" style="color: #90c8d8;">LinkedIn</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- INLINE CSS: custom footer background -->
+<footer style="background-color: #020230; border-top: 1px solid rgba(0,180,216,0.2);">
+    &copy; 2026 Group 5 &mdash; SmartTech &mdash; UICT &nbsp;|&nbsp; IT for Business
+</footer>
+
+
+<!-- Smooth scroll script -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>

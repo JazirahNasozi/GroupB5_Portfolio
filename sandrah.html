@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tukundane Sandrah Buhe - IT Support Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy:  #03045E;
+      --blue:  #0077B6;
+      --cyan:  #00B4D8;
+      --light: #CAF0F8;
+      --white: #FFFFFF;
+      --bg:    #F0F4F8;
+      --text:  #1A1A2E;
+      --grey:  #555555;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      color: var(--text);
+      background-color: var(--bg);
+    }
+
+    /* ── Top bar ── */
+    .topbar {
+      background: var(--navy);
+      padding: 14px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .topbar .brand {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--white);
+      letter-spacing: 0.04em;
+    }
+    .topbar nav a {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      font-size: 0.95rem;
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 32px;
+      transition: color 0.2s;
+    }
+    .topbar nav a:hover { color: var(--cyan); }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+      padding: 72px 40px 64px;
+      border-bottom: 4px solid var(--cyan);
+    }
+    .hero-inner { max-width: 760px; margin: 0 auto; }
+    .hero-label {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .hero h1 span { color: var(--cyan); }
+    .hero p {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 1.05rem;
+      color: #A8D8EA;
+      line-height: 1.7;
+      max-width: 620px;
+    }
+    .hero p strong {
+      font-weight: 500;
+      color: var(--white);
+    }
+
+    /* ── Main content ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 40px 80px;
+    }
+
+    section { margin-bottom: 48px; }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.45rem;
+      color: var(--blue);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--light);
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    ul li {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      font-size: 0.97rem;
+      color: var(--grey);
+      padding: 14px 20px;
+      background: var(--white);
+      border-left: 3px solid var(--cyan);
+      border-radius: 0 6px 6px 0;
+      box-shadow: 0 1px 4px rgba(3,4,94,0.06);
+    }
+    ul li::before {
+      content: '▸ ';
+      color: var(--cyan);
+      font-size: 0.85em;
+    }
+
+    /* ── CTA link ── */
+    .cta-link {
+      display: inline-block;
+      margin-top: 12px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--white);
+      background: var(--blue);
+      padding: 12px 28px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .cta-link:hover { background: var(--cyan); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--navy);
+      text-align: center;
+      padding: 22px 40px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      color: #90C8D8;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <span class="brand">TSB · Portfolio</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">IT Support Professional</p>
+      <h1>Welcome to My<br/><span>IT Support</span> Portfolio</h1>
+      <p>Hello! My name is <strong>Tukundane Sandrah Buhe</strong>. I am an IT Support Professional dedicated to helping individuals and organizations solve technology-related challenges.</p>
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <h2>What I Do</h2>
+      <ul>
+        <li>Computer troubleshooting and maintenance</li>
+        <li>Software installation and support</li>
+        <li>Network setup and troubleshooting</li>
+        <li>Technical assistance and user support</li>
+        <li>Cybersecurity awareness and basic protection</li>
+      </ul>
+    </section>
+
+    <a class="cta-link" href="sandrahabout.html">Learn More About Me →</a>
+  </main>
+
+  <footer>
+    &copy; 2026 Tukundane Sandrah Buhe · IT Support Portfolio
+  </footer>
+
+</body>
+</html>

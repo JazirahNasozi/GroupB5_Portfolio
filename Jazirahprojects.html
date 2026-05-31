@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasozi Jazirah - My Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- EXTERNAL CSS: shared portfolio styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS: styles specific to this Projects page -->
+    <style>
+        .projects {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 30px 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Navigation -->
+<div class="topbar">
+    <a href="index.html">&larr; Back to Group 5</a>
+    <nav>
+        <a href="jazirah.html">About Me</a>
+        <a href="jazirahprojects.html" class="active">My Projects</a>
+    </nav>
+</div>
+
+<!-- Page Header — INLINE CSS on the p for font size -->
+<div class="page-header">
+    <h1>My Projects</h1>
+    <p style="font-size: 16px;">A showcase of work built during my studies and personal development</p>
+</div>
+
+<!-- Projects Grid -->
+<div class="projects">
+
+    <div class="project-card">
+        <div class="card-top">
+            <div class="number">Project 01</div>
+            <h3>AgroMind AI</h3>
+        </div>
+        <div class="card-body">
+            <!-- INLINE CSS: paragraph bottom margin -->
+            <p style="margin-bottom: 12px;">An AI-powered crop disease detection platform for Ugandan farmers. Trained an EfficientNetB0 deep learning model on the PlantVillage dataset across 38 crop disease classes, achieving 98% validation accuracy.</p>
+            <div class="tech-stack">
+                <span class="tech">Python</span>
+                <span class="tech">TensorFlow</span>
+                <span class="tech">EfficientNetB0</span>
+                <span class="tech">Next.js</span>
+                <span class="tech">Flask</span>
+                <span class="tech">Kaggle GPU</span>
+            </div>
+            <span class="status ongoing">Phase 1 Complete</span>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-top">
+            <div class="number">Project 02</div>
+            <h3>SmartTech Online Store</h3>
+        </div>
+        <div class="card-body">
+            <p style="margin-bottom: 12px;">A full multi-page e-commerce website for an electronics store serving customers across Uganda. Built as a group coursework project featuring product listings, services, gallery, blog and customer login.</p>
+            <div class="tech-stack">
+                <span class="tech">HTML</span>
+                <span class="tech">CSS</span>
+                <span class="tech">JavaScript</span>
+            </div>
+            <span class="status complete">Complete</span>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-top">
+            <div class="number">Project 03</div>
+            <h3>AWMZ Explainer Site</h3>
+        </div>
+        <div class="card-body">
+            <p style="margin-bottom: 12px;">An AI-powered single-page explainer website for the Albert Water Management Zone built and deployed to Firebase Hosting. Features a Claude AI chatbot backend via Firebase Cloud Functions.</p>
+            <div class="tech-stack">
+                <span class="tech">HTML/CSS</span>
+                <span class="tech">Firebase</span>
+                <span class="tech">Anthropic API</span>
+                <span class="tech">Cloud Functions</span>
+            </div>
+            <span class="status complete">Deployed</span>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-top">
+            <div class="number">Project 04</div>
+            <h3>DigiRise Platform</h3>
+        </div>
+        <div class="card-body">
+            <p style="margin-bottom: 12px;">A final year group project — a platform that helps Ugandan SMEs build AI-generated websites using a guided wizard. Built with a modern full-stack setup and Gemini AI integration.</p>
+            <div class="tech-stack">
+                <span class="tech">React</span>
+                <span class="tech">TypeScript</span>
+                <span class="tech">Supabase</span>
+                <span class="tech">Gemini AI</span>
+                <span class="tech">Tailwind CSS</span>
+                <span class="tech">Vercel</span>
+            </div>
+            <span class="status ongoing">In Progress</span>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-top">
+            <div class="number">Project 05</div>
+            <h3>Lip Sync Animation System</h3>
+        </div>
+        <div class="card-body">
+            <p style="margin-bottom: 12px;">A deep learning pipeline that predicts viseme sequences from audio input using a bidirectional LSTM model trained with Focal Loss. Rendered as an animated character face in Google Colab.</p>
+            <div class="tech-stack">
+                <span class="tech">PyTorch</span>
+                <span class="tech">LSTM</span>
+                <span class="tech">MFCCs</span>
+                <span class="tech">Python</span>
+                <span class="tech">Google Colab</span>
+            </div>
+            <span class="status complete">Complete</span>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="card-top">
+            <div class="number">Project 06</div>
+            <h3>AIxBio Hackathon</h3>
+        </div>
+        <div class="card-body">
+            <p style="margin-bottom: 12px;">Participated in the Apart Research AIxBio Hackathon focusing on AI Biosecurity Tools (Track 3). Handled the AI component using the Anthropic API to build a biosecurity analysis tool.</p>
+            <div class="tech-stack">
+                <span class="tech">Anthropic API</span>
+                <span class="tech">Python</span>
+                <span class="tech">AI Safety</span>
+            </div>
+            <span class="status complete">Complete</span>
+        </div>
+    </div>
+
+</div>
+
+<footer style="margin-top: 0;">
+    &copy; 2026 Nasozi Jazirah &mdash; Group 5, UICT
+</footer>
+
+</body>
+</html>

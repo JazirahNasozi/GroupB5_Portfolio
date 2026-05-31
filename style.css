@@ -1,0 +1,694 @@
+
+
+/* ── 1. CSS VARIABLES ───────────────────────────── */
+:root {
+    --navy:  #03045e;
+    --blue:  #0077b6;
+    --cyan:  #00b4d8;
+    --light: #caf0f8;
+    --white: #ffffff;
+    --bg:    #f0f4f8;
+    --text:  #1a1a2e;
+    --grey:  #555555;
+}
+
+
+/* ── 2. RESET ───────────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #03045e;
+    color: white;
+}
+
+
+/* ── 3. TOP NAV ─────────────────────────────────── */
+.topbar-landing {
+    background-color: #020230;
+    padding: 16px 50px;
+    overflow: hidden;         /* contains the floated logo and nav */
+    border-bottom: 1px solid #0077b6;
+    position: sticky;
+    top: 0;
+}
+
+.topbar-logo {
+    float: left;              /* FLOAT: logo goes left */
+    color: #00b4d8;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.topbar-nav {
+    float: right;             /* FLOAT: nav goes right */
+}
+
+.topbar-nav a {
+    display: inline-block;    /* DISPLAY: inline-block so links sit side by side */
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 28px;
+    padding: 4px 0;
+    transition: color 0.25s;
+}
+
+.topbar-nav a:hover {
+    color: #00b4d8;
+}
+
+
+/* ── 4. HERO SECTION ────────────────────────────── */
+.landing-hero {
+    text-align: center;
+    padding: 100px 20px 80px;
+    background-color: #03045e;
+    background-image: linear-gradient(160deg, #020230 0%, #03045e 50%, #023e8a 100%);
+    position: relative;       /* POSITIONING: so deco circles can be placed inside */
+    overflow: hidden;
+}
+
+/* Decorative background circles — absolute positioning */
+.circle-deco {
+    position: absolute;       /* POSITIONING: removed from normal flow */
+    border-radius: 50%;
+    border: 1px solid rgba(0, 180, 216, 0.12);
+}
+
+.circle-1 {
+    width: 400px;
+    height: 400px;
+    top: -150px;
+    right: -100px;
+}
+
+.circle-2 {
+    width: 250px;
+    height: 250px;
+    bottom: -80px;
+    left: -60px;
+}
+
+.circle-3 {
+    width: 180px;
+    height: 180px;
+    top: 60px;
+    left: 10%;
+}
+
+.group-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;   /* TEXT PROPERTY */
+    color: #00b4d8;
+    margin-bottom: 18px;
+}
+
+.landing-hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.landing-hero h1 span {
+    color: #00b4d8;
+}
+
+.hero-underline {
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #00b4d8;
+    margin: 16px auto 24px;
+    border-radius: 2px;
+}
+
+.hero-sub {
+    color: #a8d8ea;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+.hero-cta {
+    display: inline-block;       /* DISPLAY: accepts padding/width unlike inline */
+    background-color: #00b4d8;
+    color: #03045e;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;   /* TRANSITION */
+}
+
+.hero-cta:hover {
+    background-color: white;
+}
+
+
+/* ── 5. STATS BAR — FLOAT LAYOUT ───────────────── */
+.stats-bar {
+    background-color: #0077b6;
+    overflow: hidden;            /* contains floated children */
+}
+
+.stats-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.stat-item {
+    float: left;                 /* FLOAT: items sit side by side */
+    width: 20%;                  /* 5 items × 20% = full row */
+    text-align: center;
+    padding: 28px 10px;
+    border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-number {
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+
+.stat-label {
+    display: block;
+    font-size: 11px;
+    color: rgba(255,255,255,0.75);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 6px;
+}
+
+
+/* ── 6. ABOUT SECTION — FLOAT 2-COLUMN ─────────── */
+.about-section {
+    padding: 80px 40px;
+    background-color: #020840;
+    overflow: hidden;            /* contains floated columns */
+}
+
+.about-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;            /* contains floated columns */
+}
+
+.about-text {
+    float: left;                 /* FLOAT: left column */
+    width: 48%;
+    padding-right: 50px;         /* BOX MODEL: spacing between columns */
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-text p {
+    color: #a8d8ea;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.about-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00b4d8;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 180, 216, 0.4);
+    padding-bottom: 2px;
+    transition: color 0.3s;
+}
+
+.about-link:hover {
+    color: white;
+}
+
+.about-cards {
+    float: right;                /* FLOAT: right column */
+    width: 48%;
+}
+
+.about-card {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 16px;         /* BOX MODEL: space between cards */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.about-card:hover {
+    background-color: rgba(0, 180, 216, 0.08);
+    border-color: rgba(0, 180, 216, 0.5);
+}
+
+.about-icon {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.about-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.about-card p {
+    color: #90c8d8;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ── 7. TEAM SECTION ────────────────────────────── */
+.team-section {
+    padding: 80px 20px;
+    background-color: #020840;
+    text-align: center;
+}
+
+.members {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.member-card {
+    display: inline-block;       /* DISPLAY: cards sit side by side */
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    border-radius: 14px;
+    width: 190px;
+    padding: 30px 20px;          /* BOX MODEL */
+    margin: 10px;                /* BOX MODEL */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.member-card:hover {
+    background-color: rgba(0, 180, 216, 0.1);
+    border-color: #00b4d8;
+}
+
+.member-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.member-card .role {
+    font-size: 11px;
+    color: #00b4d8;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.member-bio {
+    font-size: 12px;
+    color: #90c8d8;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.view-btn {
+    display: inline-block;
+    font-size: 11px;
+    color: #00b4d8;
+    border: 1px solid #00b4d8;
+    padding: 5px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.member-card:hover .view-btn {
+    background-color: #00b4d8;
+    color: #03045e;
+}
+
+
+/* ── 8. AVATAR CIRCLE ──────────────────────────── */
+.avatar-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;            /* OVERFLOW: clips image into circle */
+    margin: 0 auto 16px;
+    border: 3px solid #00b4d8;
+}
+
+.avatar-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ── 9. CONTACT STRIP — FLOAT ──────────────────── */
+.contact-strip {
+    background-color: #011240;
+    padding: 40px 60px;
+    overflow: hidden;
+}
+
+.contact-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contact-left {
+    float: left;                 /* FLOAT */
+    width: 50%;
+}
+
+.contact-right {
+    float: right;                /* FLOAT */
+    width: 50%;
+    text-align: right;
+}
+
+.contact-left h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.contact-left p,
+.contact-right p {
+    font-size: 14px;
+    color: #90c8d8;
+    line-height: 1.8;
+}
+
+
+/* ── 10. FOOTER ─────────────────────────────────── */
+footer {
+    text-align: center;
+    padding: 22px;
+    background-color: #020230;
+    border-top: 1px solid rgba(0,180,216,0.2);
+    color: #90c8d8;
+    font-size: 13px;
+}
+
+
+/* ── 11. INNER PAGE NAV (jazirah.html etc.) ─────── */
+.topbar {
+    background-color: #03045e;
+    padding: 14px 40px;
+    overflow: hidden;
+}
+
+.topbar a {
+    color: #00b4d8;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    float: left;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+.topbar nav {
+    float: right;
+}
+
+.topbar nav a {
+    float: none;
+    display: inline-block;
+    margin-left: 25px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topbar nav a.active,
+.topbar nav a:hover {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+
+/* ── 12. HERO BANNER (inner pages) ─────────────── */
+.hero,
+.page-header {
+    background-image: linear-gradient(135deg, #03045e 0%, #0077b6 100%);
+    padding: 50px 40px;
+    overflow: hidden;
+}
+
+.page-header {
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+.page-header p {
+    color: #a8d8ea;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.hero-avatar {
+    float: left;                 /* FLOAT: avatar sits beside text */
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: linear-gradient(135deg, #0077b6, #00b4d8);
+    text-align: center;
+    line-height: 90px;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    margin-right: 30px;
+}
+
+.hero-text {
+    overflow: hidden;            /* sits beside the floated avatar */
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+.hero-text .tag {
+    display: inline-block;
+    background-color: rgba(0, 180, 216, 0.25);
+    color: #00b4d8;
+    border: 1px solid #00b4d8;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-text p {
+    margin-top: 12px;
+    color: #a8d8ea;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* ── 13. SECTION CARDS (inner pages) ───────────── */
+.section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 28px 30px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e8f0;
+}
+
+.section h2 {
+    font-size: 20px;
+    color: #03045e;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #caf0f8;
+}
+
+.section p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.info-grid {
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.info-item {
+    float: left;                 /* FLOAT: info boxes side by side */
+    width: 30%;
+    margin-right: 3%;
+    margin-bottom: 15px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+
+.info-item .label {
+    display: block;
+    font-size: 11px;
+    color: #0077b6;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.info-item .value {
+    display: block;
+    font-size: 14px;
+    color: #1a1a2e;
+    font-weight: 500;
+}
+
+.skills-list {
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-image: linear-gradient(135deg, #03045e, #0077b6);
+    color: white;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 4px;
+}
+
+/* Project cards */
+.project-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e0e8f0;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+.project-card:hover {
+    border-color: #00b4d8;
+}
+
+.card-top {
+    background-image: linear-gradient(135deg, #03045e, #0077b6);
+    padding: 24px 22px 18px;
+}
+
+.card-top .number {
+    display: block;
+    font-size: 11px;
+    color: #00b4d8;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.card-top h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 20px 22px;
+}
+
+.card-body p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.tech-stack {
+    overflow: hidden;
+}
+
+.tech {
+    display: inline-block;
+    background-color: #eef4ff;
+    color: #0077b6;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+    border: 1px solid #c8dcf8;
+    margin: 2px;
+}
+
+.status {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.status.complete {
+    background-color: #e6f9f0;
+    color: #0a8a4a;
+    border: 1px solid #a3dfc0;
+}
+
+.status.ongoing {
+    background-color: #fff8e6;
+    color: #b07d00;
+    border: 1px solid #f0d080;
+}
+
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 30px 60px;
+}
